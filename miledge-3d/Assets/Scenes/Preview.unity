@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AngularSpeed: 10
-  DragSpeed: 300
+  DragSpeed: 25
 --- !u!114 &1426560699
 MonoBehaviour:
   m_ObjectHideFlags: 0
