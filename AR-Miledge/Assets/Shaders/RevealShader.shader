@@ -19,9 +19,9 @@
 			
 			#include "UnityCG.cginc"
 
-			sampler2D _MainTex;
-			fixed4 _Color;
 			float _CutOff;
+			fixed4 _Color;
+			sampler2D _MainTex;
 
 			fixed4 frag (v2f_img i) : SV_Target
 			{
