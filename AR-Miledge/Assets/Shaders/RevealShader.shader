@@ -25,7 +25,7 @@
 
 			fixed4 frag (v2f_img i) : SV_Target
 			{
-				if(i.uv.x < _CutOff){
+				if( abs(abs(i.uv.x)-0.5) < _CutOff && abs(abs(i.uv.y)-0.5) < _CutOff){
 					return _Color;
 				}
 

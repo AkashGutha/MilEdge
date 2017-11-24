@@ -5,24 +5,29 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class RevealEffect : MonoBehaviour {
 
-    public Material material;
+	public Material material;
 	private float cutOff = 0.0f;
- 
-    // Postprocess the image
-    private void OnRenderImage(RenderTexture source, RenderTexture destination)
-    {
-        Graphics.Blit(source, destination, material);
-    }
 
-	public void StartLeftToRightAnimation(){
-		StartCoroutine(LeftToRightAnimation());
+	private void Start () {
+		material.SetFloat ("_CutOff", 0f);
+		StartCoroutine (LeftToRightAnimation ());
 	}
 
-	IEnumerator LeftToRightAnimation(){
-		while(cutOff < 1f){
-			cutOff += 0.03f;
-			material.SetFloat("_CutOff", cutOff);
-			yield return new WaitForFixedUpdate();
+	// Postprocess the image
+	private void OnRenderImage (RenderTexture source, RenderTexture destination) {
+		Graphics.Blit (source, destination, material);
+	}
+
+	public void StartLeftToRightAnimation () {
+		StartCoroutine (LeftToRightAnimation ());
+	}
+
+	IEnumerator LeftToRightAnimation () {
+		yield return new WaitForSeconds (2);
+		while (cutOff < 1f) {
+			cutOff += 0.001f;
+			material.SetFloat ("_CutOff", cutOff);
+			yield return new WaitForSeconds(0.001f);
 		}
 		cutOff = 0;
 	}

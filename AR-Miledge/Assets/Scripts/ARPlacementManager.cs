@@ -8,6 +8,7 @@ public class ARPlacementManager : MonoBehaviour {
 	// public variables
 	public bool ShootFromCenter;
 	public GameObject Reticle;
+	public GameObject Model;
 
 	// private variables
 	private Camera arCamera;
@@ -44,12 +45,13 @@ public class ARPlacementManager : MonoBehaviour {
 			);
 
 			if(hits.Count>0){
+				Debug.Log("Here");
 				// display the reticle at that point
 				Reticle.SetActive(true);
 				Reticle.transform.SetPositionAndRotation(UnityARMatrixOps.GetPosition(hits[0].worldTransform), Quaternion.identity);
 			}else{
 				// swwitch off the reticle if we are not hittng any plane.
-				Reticle.SetActive(false);
+				// Reticle.SetActive(false);
 			}
 		}
 	}

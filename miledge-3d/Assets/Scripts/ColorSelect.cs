@@ -18,7 +18,7 @@ public class ColorSelect : MonoBehaviour
     {
         if (Target != null)
         {
-            Target.GetComponent<MaterialColorChanger>().ChangeColor(color);
+            Target.GetComponent<MaterialColorChanger>().ChangeDressColor(color);
         }
     }
 }
