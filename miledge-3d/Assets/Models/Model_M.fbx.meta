@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 8190de763dfbb4f3bb7dd51a182c26f2
+timeCreated: 1511614713
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: polySurface2
+    100004: sub01
+    100006: sub01_MeshPart0
+    100008: sub01_MeshPart1
+    100010: sub01_MeshPart2
+    100012: sub02
+    400000: //RootNode
+    400002: polySurface2
+    400004: sub01
+    400006: sub01_MeshPart0
+    400008: sub01_MeshPart1
+    400010: sub01_MeshPart2
+    400012: sub02
+    2300000: polySurface2
+    2300002: sub01_MeshPart0
+    2300004: sub01_MeshPart1
+    2300006: sub01_MeshPart2
+    2300008: sub02
+    3300000: polySurface2
+    3300002: sub01_MeshPart0
+    3300004: sub01_MeshPart1
+    3300006: sub01_MeshPart2
+    3300008: sub02
+    4300000: sub01_MeshPart0
+    4300002: sub01_MeshPart1
+    4300004: sub01_MeshPart2
+    4300006: polySurface2
+    4300008: sub02
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body
+    second: {fileID: 2100000, guid: 136eca59df5cf4b1cacdf5eab469bcf8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hair
+    second: {fileID: 2100000, guid: d33b7f255489b48c8a3e58169738091e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: st_gold
+    second: {fileID: 2100000, guid: e94537bc16c584b2fb51ecb96c3ef835, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: st_metal_2
+    second: {fileID: 2100000, guid: 5a8668d8529e947d0b53d5e184e464b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: st_textile
+    second: {fileID: 2100000, guid: d8c196f7390fb4c3ba854c377e514b66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: st_tile
+    second: {fileID: 2100000, guid: b9d922c669ca04dd3a5b56b36310d138, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: standart_metal
+    second: {fileID: 2100000, guid: d12e7ccee33a64d7082eb5fdd780a5a5, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

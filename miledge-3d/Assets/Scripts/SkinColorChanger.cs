@@ -13,8 +13,7 @@ public class SkinColorChanger : MonoBehaviour {
 	}
 
 	public void ChangeColor () {
-		Debug.Log (index);
-		if (index > 3) index = 0;
+		if (index > 3) { index = 0; }
 		Model.GetComponent<MaterialColorChanger> ().ChangeSkinColor (SkinColors[index]);
 		index++;
 	}

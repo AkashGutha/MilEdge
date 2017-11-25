@@ -701,7 +701,7 @@ Light:
   m_Type: 2
   m_Color: {r: 0.9558824, g: 0.98904663, b: 1, a: 1}
   m_Intensity: 1.6
-  m_Range: 20
+  m_Range: 15
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -1390,6 +1390,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dress: {fileID: 614409820}
   Skin: {fileID: 1137961055}
+--- !u!1 &1440310373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1440310375}
+  - component: {fileID: 1440310374}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1440310374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1440310373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5262ed0554fc6446e801d06d77054534, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1440310375
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1440310373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.40526974, y: -0.32573575, z: 1.281368}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467836016
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,7 +2223,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.032999992
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2220,6 +2260,18 @@ Prefab:
     - target: {fileID: 100002, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 637eee1b3952149879ab8960eb791f2a, type: 3}
