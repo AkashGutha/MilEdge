@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
 	private GameObject[] Models;
 	private int modelIndex = 0;
+	private Quaternion previousRotation;
 
 	private void Awake () {
 		Models = new GameObject[3] {
@@ -27,7 +28,12 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void SwitchWeight () {
+		// save previous rotation
+		previousRotation = GameObject.FindGameObjectWithTag ("Display Model").transform.localRotation;
+
 		Models[modelIndex].SetActive (true);
+		Models[modelIndex].transform.SetPositionAndRotation (Vector3.zero, previousRotation);
+
 		setRestModelsAsInactive (modelIndex);
 		modelIndex++;
 		if (modelIndex == Models.Length) modelIndex = 0;
