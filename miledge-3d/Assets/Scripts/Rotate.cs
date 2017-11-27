@@ -19,10 +19,10 @@ public class Rotate : MonoBehaviour
         {
             var xInput = Input.GetAxis("Mouse X");
             if(xInput > 0.1f || xInput < -0.1f )
-                transform.Rotate(0, -xInput * DragSpeed * Time.deltaTime, 0);
+                transform.Rotate(0, -xInput * DragSpeed * 10 * Time.deltaTime, 0);
         }
 #endif
-#if UNITY_ANDROID && !UNITY_EDITOR
+#if !UNITY_EDITOR
         if (Input.touchCount > 0)
         {
             var deltaX = Input.GetTouch(0).deltaPosition.x;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
 	private GameObject[] Models;
-	private int modelIndex = 0;
+	private int modelIndex = 1;
 	private Quaternion previousRotation;
 
 	private void Awake () {
