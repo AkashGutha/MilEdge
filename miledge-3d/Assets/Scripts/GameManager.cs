@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour {
 
 	private void Awake () {
 		Models = new GameObject[3] {
-			GameObject.Find ("Model_hefty"),
-				GameObject.Find ("Model_medium"),
+			GameObject.Find ("Model_medium"),
+				GameObject.Find ("Model_hefty"),
 				GameObject.Find ("Model_thin")
 		};
 		setRestModelsAsInactive (0);
