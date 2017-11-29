@@ -14,7 +14,7 @@ public class SkinColorChanger : MonoBehaviour {
 
 	public void ChangeColor () {
 		if (index > 5) { index = 0; }
-		this.GetComponent<Image> ().color = SkinColors[index];
+		// this.GetComponent<Image> ().color = SkinColors[index];
 		GameObject.FindGameObjectWithTag ("Display Model").GetComponent<MaterialColorChanger> ().ChangeSkinColor (SkinColors[index]);
 		index++;
 	}

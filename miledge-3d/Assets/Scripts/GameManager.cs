@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void OpenMilEdgeApp(){
+		Application.OpenURL("miledge://");
+	}
+
 	public void SwitchWeight () {
 		// save previous rotation
 		previousRotation = GameObject.FindGameObjectWithTag ("Display Model").transform.localRotation;
